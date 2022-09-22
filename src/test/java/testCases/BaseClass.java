@@ -1,5 +1,4 @@
 package testCases;
-import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
@@ -14,7 +13,6 @@ public class BaseClass {
     public String email = readConfig.getEmail();
     public String password = readConfig.getPassword();
     public static WebDriver webDriver;
-    public static Logger logger;
 
     @Parameters("browser")
     @BeforeClass
